@@ -62,4 +62,67 @@ Smart Calendar Assistant streamlines clinic operations through natural language 
 ---
 
 ## 🏗️ Architecture
+User Interface (Web)
+↓
+FastAPI Router
+↓
+LangGraph Conversational Agent
+├─ Parse Intent (LLM)
+├─ Check Availability
+├─ Book/Cancel/List
+└─ Generate Response (LLM)
+↓
+Services
+├─ LLM Service
+├─ Calendar Service
+├─ STT Service
+└─ TTS Service
 
+
+
+---
+
+## 💡 Key Features
+
+**Appointment Booking**
+- Multi-turn conversation for gathering details
+- Automatic conflict detection with alternatives
+- Context-aware patient name retention
+
+**Schedule Management**
+- View by date, date range, or all future appointments
+- Natural date/time formatting
+- Context-aware search for cancellations
+
+**Business Rules**
+- Clinic hours validation (9 AM - 6 PM)
+- Past-date prevention
+- Clear error messages with guidance
+
+---
+
+## 📊 Demo Scenarios
+
+| Scenario | Demonstrates |
+|----------|--------------|
+| Conflict Detection | AI intelligence + alternatives |
+| Voice Multi-turn | STT/TTS + context retention |
+| Schedule Viewing | Data retrieval + natural formatting |
+| Smart Cancellation | Context-aware search |
+| Business Validation | Rule enforcement |
+
+
+
+---
+
+## ✅ Production Features
+
+✓ Retry logic with timeout handling  
+✓ Multiple time format parsing  
+✓ Context retention across turns  
+✓ Natural language generation  
+✓ Business rule validation  
+
+---
+
+**Status:** Production-ready | **Demo:** 3:40 min | **Tech Level:** Advanced
