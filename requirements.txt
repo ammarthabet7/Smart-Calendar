@@ -1,0 +1,13 @@
+﻿fastapi==0.115.0
+uvicorn[standard]==0.31.0
+websockets==13.1
+groq==0.11.0
+pyttsx3==2.98
+langgraph==0.2.38
+langchain-core==0.3.15
+langchain-groq==0.2.0
+python-dotenv==1.0.1
+requests==2.32.3
+python-multipart==0.0.12
+aiofiles==24.1.0
+pytz==2024.2
