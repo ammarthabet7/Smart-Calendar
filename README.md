@@ -61,26 +61,6 @@ Smart Calendar Assistant streamlines clinic operations through natural language 
 
 ---
 
-## 🏗️ Architecture
-User Interface (Web)
-↓
-FastAPI Router
-↓
-LangGraph Conversational Agent
-├─ Parse Intent (LLM)
-├─ Check Availability
-├─ Book/Cancel/List
-└─ Generate Response (LLM)
-↓
-Services
-├─ LLM Service
-├─ Calendar Service
-├─ STT Service
-└─ TTS Service
-
-
-
----
 
 ## 💡 Key Features
 
@@ -98,6 +78,28 @@ Services
 - Clinic hours validation (9 AM - 6 PM)
 - Past-date prevention
 - Clear error messages with guidance
+
+
+---
+
+## 🚀 Future Roadmap
+
+### ElevenLabs Text-to-Speech Integration
+Replace pyttsx3 with ElevenLabs API for:
+- Ultra-realistic voice synthesis across 32+ languages
+- Professional voice cloning for clinic branding
+- Real-time streaming with <75ms latency
+
+### Production Calendar APIs
+Extend mock service with:
+- **Google Calendar API** - Seamless EHR integration
+- Real-time multi-user synchronization
+
+### Enhanced Speech Recognition
+Upgrade Whisper deployment with:
+- Larger model variants for medical terminology
+- Custom fine-tuning on clinic vocabulary
+
 
 ---
 
